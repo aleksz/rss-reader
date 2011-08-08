@@ -1,0 +1,2 @@
+# location of the SDK. This is only used by Ant
+sdk.dir=/home/aleksz/tools/android-sdk-linux_x86
