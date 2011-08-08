@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditTextPreference
+    		android:key="rss_url"
+    		android:title="@string/rss_url"
+    		android:summary="@string/rss_url_preference_summary"
+    		android:dialogTitle="@string/edit_rss_url_dialog_title" />
+
+    <ListPreference
+    		android:key="refresh_interval"
+    		android:entries="@array/refresh_interval_list_preference"
+    		android:title="@string/refresh_interval"
+    		android:defaultValue="60000"
+    		android:dialogTitle="@string/edit_refresh_interval_dialog_title"
+    		android:entryValues="@array/refresh_interval_list_preference_values" />
+
+</PreferenceScreen>

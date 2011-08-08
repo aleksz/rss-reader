@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <string-array name="refresh_interval_list_preference">
+        <item>@string/refresh_interval_real</item>
+        <item>@string/refresh_interval_five</item>
+        <item>@string/refresh_interval_hour</item>
+        <item>@string/refresh_interval_day</item>
+        <item>@string/refresh_interval_week</item>
+        <item>@string/refresh_interval_never</item>
+    </string-array>
+
+    <string-array name="refresh_interval_list_preference_values">
+        <item>60000</item>
+        <item>300000</item>
+        <item>3600000</item>
+        <item>86400000</item>
+        <item>604800000</item>
+        <item>0</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string name="hello">Hello World, RSSReaderActivity!</string>
+    <string name="app_name">RSS Reader</string>
+    <string name="settings">Settings</string>
+    <string name="refresh">Refresh</string>
+    <string name="rss_url">RSS url</string>
+    <string name="rss_url_preference_summary">No url configured yet</string>
+    <string name="refresh_interval">Refresh interval</string>
+    <string name="edit_rss_url_dialog_title">Enter RSS 2.0 feed url</string>
+    <string name="edit_refresh_interval_dialog_title">Choose refresh interval</string>
+    <string name="refresh_interval_real">Real time</string>
+    <string name="refresh_interval_five">Each five minutes</string>
+    <string name="refresh_interval_hour">Each hour</string>
+    <string name="refresh_interval_day">Once a day</string>
+    <string name="refresh_interval_week">Once a week</string>
+    <string name="refresh_interval_never">Never</string>
+    <string name="wrong_url">Wrong url. Should be something like http://engadget.com/rss.xml</string>
+    <string name="no_url_in_item">No url available</string>
+    <string name="not_configured">No RSS feed url configured</string>
+    <string name="new_feed_items_available">New feed items available</string>
+    <string name="no_new_feed_items_available">No new feed items available</string>
+    <string name="refreshing">Refreshing...</string>
+</resources>
