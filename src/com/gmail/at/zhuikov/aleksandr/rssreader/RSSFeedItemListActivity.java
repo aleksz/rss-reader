@@ -99,7 +99,7 @@ public class RSSFeedItemListActivity extends ListActivity {
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
-		getMenuInflater().inflate(R.menu.options, menu);
+		getMenuInflater().inflate(R.menu.list_options, menu);
 		return true;
 	}
 
