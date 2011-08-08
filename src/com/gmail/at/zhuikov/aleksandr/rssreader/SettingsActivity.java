@@ -39,8 +39,8 @@ public class SettingsActivity extends PreferenceActivity implements
 		Preferences preferences = serviceLocator.getPreferences();
 		rssPollServiceScheduler = serviceLocator.getRssPollServiceScheduler();
 
-		addPreferencesFromResource(R.xml.settings);
 		getPreferenceManager().setSharedPreferencesName(preferences.getPreferencesFileName());
+		addPreferencesFromResource(R.xml.settings);
 
 		rssUrlPreference = (EditTextPreference) getPreferenceScreen()
 				.findPreference(RSS_URL_PREFERENCE_KEY);
