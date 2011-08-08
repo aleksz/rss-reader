@@ -22,4 +22,21 @@
     <string name="new_feed_items_available">New feed items available</string>
     <string name="no_new_feed_items_available">No new feed items available</string>
     <string name="refreshing">Refreshing...</string>
+	<string name="welcome_text">
+	    \tWelcome to <b>RSS Reader</b>!\n\n
+
+	    \tYou can use this application to follow one <b>RSS 2.0</b> feed.\n\n
+
+	    \tRSS url can be configured by pressing <b>menu</b> button and choosing
+	    <b>Settings</b>.\n\n
+
+	    \tBesides <b>RSS feed url</b>, you can configure <b>refresh interval</b>.
+	    This setting will define how often application will check RSS feed for
+	    new items, while running in <b>background</b>. If new item is available,
+	    you will be informed with <b>status bar notification</b>.\n\n
+
+		\tYou	can also <b>trigger refresh manually</b>, while browsing list of
+		<b>latest feed items</b>. List of latest items will show <b>25</b>
+		latest items.
+	</string>
 </resources>
