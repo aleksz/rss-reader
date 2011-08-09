@@ -11,7 +11,7 @@
     		android:key="refresh_interval"
     		android:entries="@array/refresh_interval_list_preference"
     		android:title="@string/refresh_interval"
-    		android:defaultValue="60000"
+    		android:defaultValue="300000"
     		android:dialogTitle="@string/edit_refresh_interval_dialog_title"
     		android:entryValues="@array/refresh_interval_list_preference_values" />
 
