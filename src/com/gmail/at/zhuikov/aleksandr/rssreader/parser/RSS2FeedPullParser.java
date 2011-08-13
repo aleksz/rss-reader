@@ -37,26 +37,26 @@ public class RSS2FeedPullParser extends AbstractRSS2FeedParser {
 	public List<FeedItem> parse(InputStream input, int maxItems)
 			throws RSSFeedParserException {
 
-        List<FeedItem> result = new ArrayList<FeedItem>();
-        XmlPullParser parser = setupParser(input);
-        FeedItemBuilder feedItemBuilder = null;
-        String tagName;
+		List<FeedItem> result = new ArrayList<FeedItem>();
+		XmlPullParser parser = setupParser(input);
+		FeedItemBuilder feedItemBuilder = null;
+		String tagName;
 
-        try{
+		try {
 
-        	int currentEventType = parser.getEventType();
+			int currentEventType = parser.getEventType();
 
-	        while (currentEventType != END_DOCUMENT && result.size() != maxItems) {
-	        	tagName = parser.getName();
+			while (currentEventType != END_DOCUMENT && result.size() != maxItems) {
+				tagName = parser.getName();
 
-	        	switch (currentEventType) {
+				switch (currentEventType) {
 				case START_TAG:
 
-			        if(ITEM_TAG.equalsIgnoreCase(tagName)) {
-			        	feedItemBuilder = new FeedItemBuilder();
-			        } else if (feedItemBuilder != null) {
-			            populateMessageProperty(parser.nextText(), feedItemBuilder, tagName);
-			        }
+					if (ITEM_TAG.equalsIgnoreCase(tagName)) {
+						feedItemBuilder = new FeedItemBuilder();
+					} else if (feedItemBuilder != null) {
+						populateMessageProperty(parser.nextText(), feedItemBuilder, tagName);
+					}
 
 					break;
 
@@ -72,26 +72,26 @@ public class RSS2FeedPullParser extends AbstractRSS2FeedParser {
 					break;
 				}
 
-	        	currentEventType = parser.next();
-	        }
+				currentEventType = parser.next();
+			}
 
-        } catch (XmlPullParserException e) {
-        	throw new RSSFeedParserException("RSS input stream has wrong content", e);
+		} catch (XmlPullParserException e) {
+			throw new RSSFeedParserException("RSS input stream has wrong content", e);
 		} catch (IOException e) {
 			throw new RSSFeedParserException("Something wrong with input stream", e);
 		}
 
-        return result;
-    }
+		return result;
+	}
 
 	private Date parseDate(String dateString) {
-        try {
+		try {
 			return RFC_822_FORMAT.parse(dateString);
 		} catch (ParseException e) {
 			Log.w(TAG, e);
 			return null;
 		}
-    }
+	}
 
 	private void populateMessageProperty(String value,
 			FeedItemBuilder feedItemBuilder, String tagName) {
