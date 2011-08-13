@@ -38,18 +38,18 @@ public class RSSPollService extends IntentService {
 
 	private static final String TAG = RSSPollService.class.getSimpleName();
 
-    public static final String FINISHED_ACTION = "finished";
-    public static final String NOT_CONFIGURED_ACTION = "not_configured";
+	public static final String FINISHED_ACTION = "finished";
+	public static final String NOT_CONFIGURED_ACTION = "not_configured";
 
-    private static final int MAX_ITEMS_IN_FEED = 25;
+	private static final int MAX_ITEMS_IN_FEED = 25;
 
-    public static final String SEND_NOTIFICATIONS_EXTRA = "send_notifications";
+	public static final String SEND_NOTIFICATIONS_EXTRA = "send_notifications";
 
-    private ConnectionOpener connectionOpener;
-    private FeedItemDao feedItemDao;
-    private StatusBarNotificationSender statusBarNotificationSender;
-    private RSSFeedParser parser;
-    private Preferences preferences;
+	private ConnectionOpener connectionOpener;
+	private FeedItemDao feedItemDao;
+	private StatusBarNotificationSender statusBarNotificationSender;
+	private RSSFeedParser parser;
+	private Preferences preferences;
 
 	public RSSPollService() {
 		super("RSSPollServiceThread");
@@ -114,14 +114,14 @@ public class RSSPollService extends IntentService {
 			return false;
 		}
 
-        FeedItem latestItem = feedItemDao.getLatest();
+		FeedItem latestItem = feedItemDao.getLatest();
 
-        sort(result, new FeedItem.ByDateDescending());
+		sort(result, new FeedItem.ByDateDescending());
 
-        if (latestItem == null || !latestItem.equals(result.get(0))) {
-            return true;
-        }
+		if (latestItem == null || !latestItem.equals(result.get(0))) {
+			return true;
+		}
 
-        return false;
-    }
+		return false;
+	}
 }
