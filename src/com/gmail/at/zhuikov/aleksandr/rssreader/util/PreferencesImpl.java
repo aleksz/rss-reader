@@ -54,4 +54,9 @@ public class PreferencesImpl implements Preferences {
 			}
 		}
 	}
+
+	@Override
+	public void setRssFeedUrl(URL url) {
+		sharedPreferences.edit().putString(RSS_URL_PREFERENCE_KEY, url.toString()).commit();
+	}
 }

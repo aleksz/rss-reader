@@ -97,6 +97,10 @@ public class SettingsActivityUnitTest extends ActivityUnitTestCase<SettingsActiv
 		public URL getRssFeedUrl() {
 			return null;
 		}
+
+		@Override
+		public void setRssFeedUrl(URL url) {
+		}
 	}
 
 	private class MockRssPollServiceScheduler implements

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:orientation="vertical"
+		android:gravity="center_vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+	    android:padding="10dp">
+
+    <TextView
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:id="@+id/configure_by_intent"/>
+
+    <LinearLayout
+    		android:layout_marginTop="15dp"
+    		android:gravity="right"
+    		android:orientation="horizontal"
+ 			android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+
+	    <Button
+	    		android:text="@string/cancel_configuration_by_intent"
+	    		android:id="@+id/cancel_configuration_by_intent"
+	    		android:onClick="cancel"
+	    		android:layout_width="wrap_content"
+	    		android:layout_height="wrap_content"/>
+
+	    <Button
+	    		android:text="@string/confirm_update_by_intent"
+	    		android:id="@+id/confirm_update_by_intent"
+	    		android:onClick="confirm"
+	    		android:layout_width="wrap_content"
+	    		android:layout_height="wrap_content"/>
+	</LinearLayout>
+</LinearLayout>

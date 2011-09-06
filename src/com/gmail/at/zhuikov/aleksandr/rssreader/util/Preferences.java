@@ -18,4 +18,6 @@ public interface Preferences {
 	long getRefreshInterval();
 
 	URL getRssFeedUrl();
+
+	void setRssFeedUrl(URL url);
 }

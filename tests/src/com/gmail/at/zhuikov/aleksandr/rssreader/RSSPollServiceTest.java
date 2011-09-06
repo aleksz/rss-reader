@@ -210,6 +210,10 @@ class RSSPollServiceTest extends ServiceTestCase<RSSPollService> {
 		public long getRefreshInterval() {
 			return 0;
 		}
+
+		@Override
+		public void setRssFeedUrl(URL url) {
+		}
 	}
 
 	private final class MockRSSFeedParser implements RSSFeedParser {

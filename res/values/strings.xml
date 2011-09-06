@@ -22,6 +22,14 @@
     <string name="new_feed_items_available">New feed items available</string>
     <string name="no_new_feed_items_available">No new feed items available</string>
     <string name="refreshing">Refreshing...</string>
+	<string name="cancel_configuration_by_intent">Cancel</string>
+	<string name="confirm_update_by_intent">Confirm</string>
+	<string name="set_url_confirmation">
+		\tWould you like to set RSS feed url to &lt;b>%1$s&lt;/b> ?
+	</string>
+	<string name="change_url_confirmation">
+		\tWould you like to change RSS feed url from &lt;b>%1$s&lt;/b> to &lt;b>%2$s&lt;/b> ?
+	</string>
 	<string name="welcome_text">
 	    \tWelcome to <b>RSS Reader</b>!\n\n
 
